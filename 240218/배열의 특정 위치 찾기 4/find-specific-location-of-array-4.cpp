@@ -9,7 +9,8 @@ int main(void) {
 	int num, cnt = 0, sum = 0;
 	for (int i = 0; i < 10; i++) {
 		cin >> num;
-		if (num > 0 && num % 2 == 0) {
+		if (!num) break;
+		if (num % 2 == 0) {
 			cnt++;
 			sum += num;
 		}
